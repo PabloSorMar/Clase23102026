@@ -1,0 +1,39 @@
+// Estilos con Sass para la página home
+
+.ion-padding {
+  // Aseguramos espacio interno si es necesario
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; // Separa el título y el botón
+  align-items: center; // Centra verticalmente ambos elementos
+  width: 100%;
+  margin-bottom: 2rem;
+
+  .main-title {
+    color: red; // Título en rojo
+    text-align: center; // Centrado (aunque con flex conviene asegurar alineación)
+    text-transform: uppercase; // En mayúsculas
+    flex-grow: 1; // Ocupa el espacio para ayudar a centrar
+    margin: 0;
+  }
+
+  .right-button {
+    --background: blue; // Botón en azul (usando variable CSS de Ionic)
+    margin-left: 1rem;
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; // Imagen centrada horizontalmente
+  width: 100%;
+
+  .green-bordered-image {
+    border: 3px solid green; // Borde verde de grosor 3px
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; // Opcional: esquinas ligeramente redondeadas
+  }
+}
